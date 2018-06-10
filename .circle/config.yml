@@ -21,5 +21,9 @@ jobs:
           command: yarn install
 
       - run:
-          name: Run Linting and Tests
-          command: yarn ci
+          name: Run Linting
+          command: yarn lint
+
+      - run:
+          name: Run Unit Tests
+          command: yarn test

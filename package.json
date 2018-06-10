@@ -7,9 +7,10 @@
   "author": "Owen Buckley <owen@thegreenhouse.io>",
   "license": "Apache-2.0",
   "scripts": {
-    "ci": "eslint *.js src/*.js reference-app/*.js",
     "develop": "webpack-dev-server --open",
-    "serve": "webpack"
+    "lint": "eslint *.js src/*.js reference-app/*.js",
+    "serve": "webpack",
+    "test": "wct  --compile=never --npm"
   },
   "devDependencies": {
     "css-loader": "^0.28.11",
@@ -20,6 +21,9 @@
     "html-webpack-plugin": "^3.2.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-loader": "^2.1.5",
+    "wct-browser-legacy": "^1.0.1",
+    "wct-headless": "^2.2.2",
+    "web-component-tester": "^6.6.0",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.3",
     "webpack-dev-server": "^3.1.4"

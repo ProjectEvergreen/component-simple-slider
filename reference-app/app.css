@@ -1,4 +1,9 @@
-h2{
+.reference-app {
   width: 80%;
   margin: 0 auto;
+  text-align: center;
+
+  & h2 {
+    text-decoration: underline;
+  }
 }

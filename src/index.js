@@ -1,11 +1,18 @@
-class HelloService {
+class HelloComponent extends HTMLElement {
 
-  static sayHello() {
-    const greeting = name || 'World';
+  constructor() {
+    super();
 
-    return `Hello ${greeting}!`;
+    this.root = this.attachShadow({ mode: 'closed' });
+    this.root.innerHTML = this.template();
   }
-  
+
+  template() {
+    return `
+      <h3>Hello World!<h3>
+    `;
+  }
+
 }
 
-export default HelloService;
+customElements.define('eve-hello', HelloComponent);

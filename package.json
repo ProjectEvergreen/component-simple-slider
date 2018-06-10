@@ -10,7 +10,7 @@
     "develop": "webpack-dev-server --open",
     "lint": "eslint *.js src/*.js reference-app/*.js",
     "serve": "webpack",
-    "test": "wct  --compile=never --npm"
+    "test": "wct  --compile=never --npm --expanded"
   },
   "devDependencies": {
     "css-loader": "^0.28.11",

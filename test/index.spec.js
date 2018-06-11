@@ -1,9 +1,12 @@
-suite('testing 123', function() {
+// import HelloComponent from '../src/index';
+// console.log('HelloComponent', HelloComponent);
+
+describe('testing 123', () => {
   
-  test('it passes', function() {
+  it('should pass', () => {
     const bool = true;
 
-    assert.isTrue(bool);
+    expect(bool).to.equal(true);
   });
 
 });

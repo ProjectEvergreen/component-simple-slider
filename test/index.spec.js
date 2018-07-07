@@ -1,12 +1,19 @@
-// import HelloComponent from '../src/index';
-// console.log('HelloComponent', HelloComponent);
+import { word } from '../src/index';
 
-describe('testing 123', () => {
+describe('basic testing suite', () => {
   
-  it('should pass', () => {
+  it('should be true', () => {
     const bool = true;
 
     expect(bool).to.equal(true);
+  });
+
+});
+
+describe('testing word', () => {
+  
+  it('should be hello', () => {
+    expect(word).to.equal('hello');
   });
 
 });

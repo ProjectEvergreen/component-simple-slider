@@ -1,18 +1,23 @@
-class HelloComponent extends HTMLElement {
+const word = 'hello';
 
-  constructor() {
-    super();
+export default word;
 
-    this.root = this.attachShadow({ mode: 'closed' });
-    this.root.innerHTML = this.template();
-  }
+// class HelloComponent extends HTMLElement {
 
-  template() {
-    return `
-      <h3>Hello World!<h3>
-    `;
-  }
+//   constructor() {
+//     super();
 
-}
+//     this.root = this.attachShadow({ mode: 'closed' });
+//     this.root.innerHTML = this.template();
+//   }
 
-customElements.define('eve-hello', HelloComponent);
+//   template() {
+//     return `
+//       <h3>Hello World!<h3>
+//     `;
+//   }
+
+// }
+
+// customElements.define('eve-hello', HelloComponent);
+// export default HelloComponent;

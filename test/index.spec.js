@@ -1,4 +1,4 @@
-import word from '../src/index';
+import HelloComponent from '../src/index';
 
 describe('basic testing suite', () => {
   
@@ -10,9 +10,11 @@ describe('basic testing suite', () => {
 
 });
 
-describe('testing word', () => {
+describe('testing component', () => {
   
   it('should be hello', () => {
-    expect(word).toBe('hello');
+    console.log('typeof', typeof HelloComponent);
+    expect(HelloComponent).toNotBe(undefined);
   });
+
 });

@@ -1,11 +1,11 @@
-import { word } from '../src/index';
+import word from '../src/index';
 
 describe('basic testing suite', () => {
   
   it('should be true', () => {
     const bool = true;
 
-    expect(bool).to.equal(true);
+    expect(bool).toBe(true);
   });
 
 });
@@ -13,7 +13,6 @@ describe('basic testing suite', () => {
 describe('testing word', () => {
   
   it('should be hello', () => {
-    expect(word).to.equal('hello');
+    expect(word).toBe('hello');
   });
-
 });

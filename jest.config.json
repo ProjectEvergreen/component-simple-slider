@@ -1,0 +1,5 @@
+{
+  "verbose": true,
+
+  "testEnvironment": "@skatejs/ssr/jest"
+}

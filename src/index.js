@@ -9,7 +9,7 @@ class HelloComponent extends HTMLElement {
 
   template() {
     return `
-      <h3>Hello World!<h3>
+      <h3>???!<h3>
     `;
   }
 

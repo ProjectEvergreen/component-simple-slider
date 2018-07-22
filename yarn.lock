@@ -537,6 +537,12 @@
   version "3.0.0-pre.19"
   resolved "https://registry.yarnpkg.com/@polymer/test-fixture/-/test-fixture-3.0.0-pre.19.tgz#415e16f75da4a242171c5954b6f4443fdca0c4c2"
 
+"@skatejs/bore@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@skatejs/bore/-/bore-4.0.3.tgz#c4a3b114431c9315d5061da9babd7796c7057fa2"
+  dependencies:
+    skatejs-dom-diff "^0.4.2"
+
 "@skatejs/ssr@^0.19.6":
   version "0.19.6"
   resolved "https://registry.yarnpkg.com/@skatejs/ssr/-/ssr-0.19.6.tgz#782fe88e426f31f9e0725cc059d43dfe6a5b9821"
@@ -8967,6 +8973,12 @@ sinon@^2.3.5:
 sisteransi@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-0.1.1.tgz#5431447d5f7d1675aac667ccd0b865a4994cb3ce"
+
+skatejs-dom-diff@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/skatejs-dom-diff/-/skatejs-dom-diff-0.4.2.tgz#9f0406a6d6839c5505d79e75207a0e6a62a7f285"
+  dependencies:
+    object-assign "^4.0.1"
 
 slash@^1.0.0:
   version "1.0.0"

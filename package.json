@@ -10,9 +10,10 @@
     "develop": "webpack-dev-server --open",
     "lint": "eslint *.js src/*.js reference-app/*.js",
     "serve": "webpack",
-    "test": "jest"
+    "test": "jest --config ./jest.config.json"
   },
   "devDependencies": {
+    "@skatejs/bore": "^4.0.3",
     "@skatejs/ssr": "^0.19.6",
     "@webcomponents/webcomponentsjs": "^2.0.2",
     "babel": "^6.23.0",

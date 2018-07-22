@@ -17,6 +17,7 @@ describe('testing component', () => {
   it('should have a greeting of Hello World!', () => {
     // component.wait(element => {
     //   console.log('????');
+    //   // XXX assertions not running here???
     //   expect(true).toBe(false);
     //   expect(element.has('Hello World!')).toBe(true);
     // }).catch(() => {});

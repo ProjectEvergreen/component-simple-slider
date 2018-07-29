@@ -20,5 +20,5 @@ describe('HelloComponent', function() {
       expect(heading[0].innerHTML).to.equal('Hello World!');
     });
   });
-
+  
 });

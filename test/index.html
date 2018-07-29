@@ -5,10 +5,18 @@
     <meta charset="utf-8">
     <script src="../node_modules/wct-browser-legacy/browser.js"></script>
     <script src="../node_modules/@polymer/test-fixture/test-fixture-mocha.js"></script>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+    <script type="module" src="../src/index.js"></script>
 
+    <test-fixture id="hello">
+      <template>
+        <eve-hello></eve-hello>
+      </template>
+    </test-fixture>
+      
     <script>
       WCT.loadSuites([
-       './hello-world.spec.html'
+       './hello-world.spec.js'
       ]);
     </script>
 

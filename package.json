@@ -9,22 +9,18 @@
   "scripts": {
     "develop": "webpack-dev-server --open",
     "lint": "eslint *.js src/*.js reference-app/*.js",
-    "serve": "webpack",
-    "test": "jest"
+    "serve": "webpack && ws -d ./dist --open",
+    "test": "wct  --compile=never --npm --expanded"
   },
   "devDependencies": {
-    "@skatejs/ssr": "^0.19.6",
-    "@webcomponents/webcomponentsjs": "^2.0.2",
-    "babel": "^6.23.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "@polymer/test-fixture": "^3.0.0-pre.21",
     "css-loader": "^0.28.11",
     "css-to-string-loader": "^0.1.3",
     "cssnano": "^3.10.0",
     "eslint": "^4.19.1",
     "eslint-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "jest": "^23.4.1",
+    "local-web-server": "^2.6.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-loader": "^2.1.5",
     "wct-browser-legacy": "^1.0.1",

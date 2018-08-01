@@ -1,17 +1,34 @@
+import { LitElement, html } from 'lit-html-element';
 import '../src/index.js';
 import css from './app.css';
 
-class ReferenceApp extends HTMLElement {
+class ReferenceApp extends LitElement {
+
+  static get properties() {
+    return {
+      content: {
+        type: Array,
+        attrName: 'content'
+      }
+    };
+  }
 
   constructor() {
     super();
 
-    this.root = this.attachShadow({ mode: 'closed' });
-    this.root.innerHTML = this.template();
+    this.content = [
+      'Slide 1',
+      'Slide 2',
+      'Slide 3'
+    ];
   }
 
-  template() {
-    return `
+  generateSlotTemplate(item, index) {
+    return html`<div slot$="slide${index + 1}"><h3>${item}</h3></div>`;
+  }
+
+  render() {
+    return html`
       <style>
         ${css}
       </style>
@@ -19,7 +36,9 @@ class ReferenceApp extends HTMLElement {
       <div class="reference-app">
         <h2>Simple Slider Reference App</h2>
         
-        <eve-hello></eve-hello>
+        <eve-simple-slider slots$=${this.content.length}>
+          ${ this.content.map(this.generateSlotTemplate) }
+        </eve-simple-slider>
       </div>
     `;
   }

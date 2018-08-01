@@ -12,6 +12,9 @@
     "serve": "webpack && ws -d ./dist --open",
     "test": "wct  --compile=never --npm --expanded"
   },
+  "dependencies": {
+    "lit-html-element": "^0.9.1"
+  },
   "devDependencies": {
     "@polymer/test-fixture": "^3.0.0-pre.21",
     "css-loader": "^0.28.11",

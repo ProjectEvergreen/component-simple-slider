@@ -1,5 +1,6 @@
 import { LitElement, html } from '@polymer/lit-element';
 import '../src/index.js';
+import '../src/greeting.js';
 import css from './app.css';
 
 class ReferenceApp extends LitElement {
@@ -37,6 +38,8 @@ class ReferenceApp extends LitElement {
       <div class="reference-app">
         <h2>Simple Slider Reference App</h2>
         
+        <x-greeting name="Owen"></x-greeting>
+
         <x-simple-slider slots$=${this.content.length}>
           ${ this.content.map(this.generateSlotTemplate) }
         </x-simple-slider>

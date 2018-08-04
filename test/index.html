@@ -13,6 +13,16 @@
         <x-simple-slider></x-simple-slider>
       </template>
     </test-fixture>
+
+    <test-fixture id="slider-three">
+      <template>
+        <x-simple-slider slots="3">
+          <div slot="slide1"><h3>Slide 1</h3></div>
+          <div slot="slide2"><h3>Slide 2</h3></div>
+          <div slot="slide3"><h3>Slide 3</h3></div>
+        </x-simple-slider>
+      </template>
+    </test-fixture>
       
     <script>
       WCT.loadSuites([

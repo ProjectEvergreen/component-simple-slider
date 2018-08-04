@@ -13,7 +13,7 @@ Two things are needed when using this componenet
 1. Each Slide, with an attribute of `slots="slideN"` (`N` should increment starting from 1)
 
 _example_:
-```javascript
+```html
 <x-simple-slider slots="3">
   <div slot="slide1">Slide 1</div>
   <div slot="slide2">Slide 3</div>

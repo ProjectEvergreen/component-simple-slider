@@ -22,7 +22,7 @@ _example_:
 ```
 
 ## Development
-> This project uses Yarn, please install it first
+> This project uses [Yarn](https://yarnpkg.com/), please install it first
 
 - For a dev server running a "reference app", run `yarn develop`
-- To run unit tests, run `yarn test
+- To run unit tests, run `yarn test`

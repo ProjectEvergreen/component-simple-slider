@@ -1,4 +1,5 @@
-describe('SimpleSliderComponent', function() {  
+describe('SimpleSliderComponent', () => { 
+   
   describe('default behavior - no items', () => {
     let componentRoot;
 

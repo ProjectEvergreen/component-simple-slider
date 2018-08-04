@@ -8,6 +8,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "develop": "webpack-dev-server --open",
+    "ci": "yarn lint && yarn test && webpack",
     "lint": "eslint *.js src/*.js reference-app/*.js",
     "serve": "webpack && ws -d ./dist --open",
     "test": "wct  --compile=never --npm --expanded"

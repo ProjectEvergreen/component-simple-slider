@@ -37,7 +37,9 @@ class ReferenceApp extends LitElement {
       <div class="reference-app">
         <h2>Simple Slider Reference App</h2>
         
-        <x-hello></x-hello>
+        <x-simple-slider slots$=${this.content.length}>
+          ${ this.content.map(this.generateSlotTemplate) }
+        </x-simple-slider>
       </div>
     `;
   }

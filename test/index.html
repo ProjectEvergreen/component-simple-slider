@@ -8,15 +8,15 @@
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
     <script type="module" src="../src/index.js"></script>
     
-    <test-fixture id="hello">
+    <test-fixture id="slider">
       <template>
-        <x-hello></x-hello>
+        <x-simple-slider></x-simple-slider>
       </template>
     </test-fixture>
       
     <script>
       WCT.loadSuites([
-       './hello.spec.js'
+       './index.spec.js'
       ]);
     </script>
 

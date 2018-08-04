@@ -1,8 +1,8 @@
 # component-simple-slider
-A very naive slider component using Custom Element components to serve as a proof of concept for publishing and consuming Custom Elements from **npm**.
+A very naive slider component using [Custom Element and Shadow DOM]() based components to serve as a proof of concept for publishing and consuming Custom Elements from **npm**.  
 
 ## Installation
-1. If you aren't already using it, use npm / yarn to install `@polymer/lit-element` as dependency
+1. If you aren't already using it, use **npm** or **Yarn** to install `@polymer/lit-element` to your project's `dependencies`
 1. Install `@???/component-simple-slider`
 
 > This component makes no assumptions about polyfills, please provide your own.

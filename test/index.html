@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <script src="../node_modules/wct-browser-legacy/browser.js"></script>
+    <script src="../node_modules/@polymer/test-fixture/test-fixture-mocha.js"></script>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+    <script type="module" src="../src/index.js"></script>
+    
+    <test-fixture id="slider-default">
+      <template>
+        <x-simple-slider></x-simple-slider>
+      </template>
+    </test-fixture>
+
+    <test-fixture id="slider-three">
+      <template>
+        <x-simple-slider slots="3">
+          <div slot="slide1"><h3>Slide 1</h3></div>
+          <div slot="slide2"><h3>Slide 2</h3></div>
+          <div slot="slide3"><h3>Slide 3</h3></div>
+        </x-simple-slider>
+      </template>
+    </test-fixture>
+      
+    <script>
+      WCT.loadSuites([
+       './index.spec.js'
+      ]);
+    </script>
+
+  </head>
+  
+</html>

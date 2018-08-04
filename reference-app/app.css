@@ -1,0 +1,17 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+div.reference-app {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+
+  & h2 {
+    text-decoration: underline;
+    padding: 10px 0;
+  }
+}

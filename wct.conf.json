@@ -1,0 +1,20 @@
+{
+  "plugins": {
+    "local": {
+      "disabled": true
+    },
+    "headless": {
+      "browsers": [
+        "chrome"
+      ],
+      "browsersOptions": {
+        "chrome": [
+          "window-size=1920,1080",
+          "headless",
+          "disable-gpu",
+          "no-sandbox"
+        ]
+      }
+    }
+  }
+}

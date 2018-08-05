@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "A simple slider component as a Custom Element",
   "main": "src/index.js",
+  "files": ["./src"],
   "repository": "git@github.com:ProjectEvergreen/component-simple-slider.git",
   "author": "Owen Buckley <owen@thegreenhouse.io>",
   "license": "Apache-2.0",

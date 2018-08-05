@@ -1,4 +1,10 @@
 # component-simple-slider
+[![GitHub release](https://img.shields.io/github/tag/ProjectEvergreen/component-simple-slider.svg)](https://github.com/ProjectEvergreen/component-simple-slider/tags)
+![CircleCI branch](https://img.shields.io/circleci/project/github/ProjectEvergreen/component-simple-slider/master.svg?style=plastic)
+[![GitHub issues](https://img.shields.io/github/issues-raw/ProjectEvergreen/component-simple-slider.svg)](https://github.com/ProjectEvergreen/component-simple-slider/issues)
+[![GitHub issues](https://img.shields.io/github/issues-pr-raw/ProjectEvergreen/component-simple-slider.svg)](https://github.com/ProjectEvergreen/component-simple-slider/issues)
+[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/ProjectEvergreen/component-simple-slider/master/LICENSE.md)
+
 A very naive slider component using [Custom Element and Shadow DOM]() based components to serve as a proof of concept for publishing and consuming Custom Elements from **npm**.  
 
 ## Installation

@@ -40,7 +40,6 @@ Here are the basic steps to follow for publishing a new release
 1. Make sure all commits are in `master`
 1. Make sure there are no changes in your working directory by running `git status`
 1. Set the version by running `yarn version <major|minor|patch>`
-1. Commit the changes, for example `git commit -a -m "bumping to next release version x.y.z"`
 1. Pubish to npm by running `npm publish`
 1. Tag and push up all changes with `git tag -a x.y.z -m "tagging x.y.z release"
 1. Create [release notes](https://github.com/ProjectEvergreen/component-simple-slider/releases) in GitHub

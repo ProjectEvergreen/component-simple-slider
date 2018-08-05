@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "A simple slider component as a Custom Element",
   "main": "src/index.js",
-  "files": ["./src"],
+  "files": [
+    "./src"
+  ],
   "repository": "git@github.com:ProjectEvergreen/component-simple-slider.git",
   "author": "Owen Buckley <owen@thegreenhouse.io>",
   "license": "Apache-2.0",
@@ -14,10 +16,11 @@
     "serve": "webpack && ws -d ./dist --open",
     "test": "wct --npm --expanded"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@polymer/lit-element": "^0.5.2"
   },
   "devDependencies": {
+    "@polymer/lit-element": "^0.5.2",
     "@polymer/test-fixture": "^3.0.0-pre.21",
     "css-loader": "^0.28.11",
     "css-to-string-loader": "^0.1.3",

@@ -21,5 +21,13 @@ jobs:
           command: yarn install
 
       - run:
+          name: Run Linting
+          command: yarn lint
+
+      - run:
+          name: Run Unit Tests
+          command:  export CI_RUN=true && yarn test
+
+      - run:
           name: Run Build
-          command: yarn lint && yarn test && yarn build
+          command: yarn clean && yarn build

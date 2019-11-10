@@ -1,4 +1,4 @@
-import { LitElement, html } from '@polymer/lit-element';
+import { LitElement, html } from 'lit-element';
 import '../src/index.js';
 import css from './app.css';
 
@@ -24,20 +24,19 @@ class ReferenceApp extends LitElement {
   }
 
   generateSlotTemplate(item, index) {
-    return html`<div slot$="slide${index + 1}"><h3>${item}</h3></div>`;
+    return html`<div .slot="slide${index + 1}"><h3>${item}</h3></div>`;
   }
 
-  // TODO should use props
-  _render() {
+  render() {
     return html`
       <style>
-        ${css}
+        ${ css }
       </style>
 
       <div class="reference-app">
         <h2>Simple Slider Reference App</h2>
         
-        <x-simple-slider slots$=${this.content.length}>
+        <x-simple-slider .slots=${this.content.length}>
           ${ this.content.map(this.generateSlotTemplate) }
         </x-simple-slider>
       </div>

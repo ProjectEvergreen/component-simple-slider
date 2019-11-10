@@ -10,18 +10,19 @@
   "author": "Owen Buckley <owen@thegreenhouse.io>",
   "license": "Apache-2.0",
   "scripts": {
+    "build": "webpack",
     "develop": "webpack-dev-server --open",
-    "ci": "yarn lint && yarn test && webpack",
-    "lint": "eslint *.js src/*.js reference-app/*.js",
-    "serve": "webpack && ws -d ./dist --open",
+    "lint": "eslint \"*.js\" \"src/**/*.js\" \"reference-app/**/*.js\"",
+    "serve": "yarn build && ws -d ./dist --open",
     "test": "wct --npm --expanded"
   },
   "peerDependencies": {
-    "@polymer/lit-element": "^0.5.2"
+    "lit-element": "^2.0.0"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.1"
   },
   "devDependencies": {
-    "@polymer/lit-element": "^0.5.2",
-    "@polymer/test-fixture": "^3.0.0-pre.21",
     "css-loader": "^0.28.11",
     "css-to-string-loader": "^0.1.3",
     "cssnano": "^3.10.0",

@@ -1,4 +1,4 @@
-import { LitElement, html } from '@polymer/lit-element';
+import { LitElement, html } from 'lit-element';
 
 class SimpleSliderComponent extends LitElement {
   
@@ -27,7 +27,7 @@ class SimpleSliderComponent extends LitElement {
       const isActiveSlot = index === this.activeIndex ? 'active-slot' : 'slot';
 
       return html`
-        <div class$="${isActiveSlot}"><slot name$="slide${index + 1}"></slot></div>
+        <div class="${isActiveSlot}"><slot .name="slide${index + 1}"></slot></div>
       `;
     });
   }
@@ -37,7 +37,7 @@ class SimpleSliderComponent extends LitElement {
       const isActiveSlot = index === this.activeIndex ? 'active-slot' : 'slot';
 
       return html`
-        <li class$="${isActiveSlot}" onclick=${() => this.setActiveIndex(index) }>o</li>
+        <li class="${isActiveSlot}" @click=${() => this.setActiveIndex(index) }>o</li>
       `;
     });
   }
@@ -46,8 +46,8 @@ class SimpleSliderComponent extends LitElement {
     this.activeIndex = index;
   }
 
-  // TODO should use props
-  _render() {
+  // TODO should use props?
+  render() {
     return html`
       <style>
         :host {

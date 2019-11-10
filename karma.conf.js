@@ -1,5 +1,5 @@
 const path = require('path');
-const isLocalDev = process.env.CI_RUN !== 'true';
+const isLocalDev = process.env.CI !== 'true';
 
 process.env.CHROME_BIN = require('puppeteer').executablePath();
 

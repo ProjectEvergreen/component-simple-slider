@@ -34,7 +34,7 @@ module.exports = function (config) {
     reporters: ['progress', 'dots', 'junit', 'coverage-istanbul'],
     port: 9876,
     colors: true,
-    logLevel: isLocalDev ? config.LOG_DEBUG : config.LOG_INFO,
+    logLevel: isLocalDev ? config.LOG_INFO : config.LOG_DEBUG,
     autoWatch: isLocalDev,
     browsers: ['ChromiumHeadlessConfigured'],
     customLaunchers: {
@@ -79,10 +79,10 @@ module.exports = function (config) {
         emitWarning: false,
         // thresholds for all files
         global: {
-          statements: 90,
+          statements: 80,
           branches: 90,
-          functions: 90,
-          lines: 90
+          functions: 75,
+          lines: 80
         }
       }
     }
